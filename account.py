@@ -27,3 +27,4 @@ class Account:
 
     def get_name(self) -> str:
         return f'{self._account_name}'
+
