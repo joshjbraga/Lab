@@ -1,4 +1,4 @@
-# Test Cases
+import pytest
 from account import Account
 
 def test__init__():
@@ -15,7 +15,7 @@ def test_deposit():
     testName.deposit(0)
     assert testName.get_balance() == 90
 
-def test_withdrawl():
+def test_withdarawl():
     testName = Account('Jeremy')
     testName.deposit(90)
     testName.withdraw(-80)
@@ -24,3 +24,4 @@ def test_withdrawl():
     assert testName.get_balance() == 10
     testName.deposit(0)
     assert testName.get_balance() == 10
+
