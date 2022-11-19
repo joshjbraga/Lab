@@ -34,7 +34,7 @@
     "node.js.selected.package.eslint": "(autodetect)"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python tests.Python tests for test_ account.MyTestCase.test_deposit">
     <configuration name="test_ account" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Lab" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -57,8 +57,24 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_ account.MyTestCase.test_deposit" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Lab" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_ account.MyTestCase.test_deposit&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_ account.MyTestCase.test_deposit" />
         <item itemvalue="Python.test_ account" />
       </list>
     </recent_temporary>
@@ -71,7 +87,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668816542585</updated>
-      <workItem from="1668816543854" duration="1140000" />
+      <workItem from="1668816543854" duration="1490000" />
     </task>
     <servers />
   </component>
