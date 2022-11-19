@@ -1,10 +1,26 @@
 # Test Cases
-import account
-import unittest
+from account import Account
 
-class MyTestCase(unittest.TestCase):
+def test__init__():
+    testName = Account('Jeremy')
+    assert testName.get_name() == 'Jeremy'
+    assert testName.get_balance() == 0
 
-    def test_deposit(self):
-        self.assertEqual(account.deposit(40, 40))
-        self.assertEqual(account.deposit(0, 0))
-        self.assertEqual(account.deposit(-40, 0))
+def test_deposit():
+    testName = Account('Jeremy')
+    testName.deposit(-90)
+    assert testName.get_balance() == 0
+    testName.deposit(90)
+    assert testName.get_balance() == 90
+    testName.deposit(0)
+    assert testName.get_balance() == 90
+
+def test_withdrawl():
+    testName = Account('Jeremy')
+    testName.deposit(90)
+    testName.withdraw(-80)
+    assert testName.get_balance() == 0
+    testName.deposit(80)
+    assert testName.get_balance() == 10
+    testName.deposit(0)
+    assert testName.get_balance() == 10
