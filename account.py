@@ -8,8 +8,8 @@ class Account:
         '''
         This function initializes the account
         '''
-        self._account_name: str = f'{name}'
-        self._account_balance: float = 0
+        self.__account_name: str = f'{name}'
+        self.__account_balance: float = 0
 
     def deposit(self, amount: float) -> bool:
         '''
@@ -17,7 +17,7 @@ class Account:
         and if it is, that amount is added to the account
         '''
         if amount > 0:
-            self._account_balance += amount
+            self.__account_balance += amount
             return True
         else:
             return False
@@ -27,8 +27,8 @@ class Account:
         This function sees if your withdrawal is a real positive numer
         and if it is, that amount is subtracted to the account
         '''
-        if amount > 0:
-            self._account_balance -= amount
+        if amount > 0 and amount <= self.__account_balance:
+            self.__account_balance -= amount
             return True
         else:
             return False
@@ -38,11 +38,11 @@ class Account:
         '''
         This function grabs the amount left in the account
         '''
-        return self._account_balance
+        return self.__account_balance
 
     def get_name(self) -> str:
         '''
         This function grabs the name from the account
         '''
-        return f'{self._account_name}'
+        return f'{self.__account_name}'
 
