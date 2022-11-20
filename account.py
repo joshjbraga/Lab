@@ -2,9 +2,7 @@
 # Lab 12
 # 11/18/2022
 
-# Joshua Braga
-# Lab 12
-# 11/18/2022
+
 
 class Account:
 
