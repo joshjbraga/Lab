@@ -3,6 +3,11 @@
 # 11/18/2022
 
 class Account:
+    '''
+    This class is made to create and run an
+    account that you can deposit and withdraw
+    from.
+    '''
 
     def __init__(self, name: str) -> None:
         '''
