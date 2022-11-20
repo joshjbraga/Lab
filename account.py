@@ -37,8 +37,8 @@ class Account:
         This function sees if your withdrawal is a real positive numer
         and if it is, that amount is subtracted to the account
         '''
-        if amount > 0:
-            self.__account_balance = self.__account_balance - amount
+        if amount > 0 and amount <= self.__account_balance:
+            self.__account_balance -= amount
             print(f'Account balance = {self.__account_balance}')
             return True
         else:
